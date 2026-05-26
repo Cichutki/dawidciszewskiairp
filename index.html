@@ -104,6 +104,48 @@
             padding: 20px;
             text-align: center;
         }
+		
+		header {
+    background: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Lewa strona */
+.logo-left {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Środkowe logo */
+.logo-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 100px;   /* możesz zmienić np. na 40px lub 70px */
+    width: auto;
+}
+
+/* Prawa strona */
+.menu-right a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+}
+		
+		
+		
     </style>
 </head>
 
@@ -111,18 +153,23 @@
 
     <!-- TOP BAR -->
     <div class="top-bar">
-        <div>Email: dawid.ciszewski.airp@gmail.com</div>
-        <div>Tel: +48 790 737 431</div>
+        <div>email: dawid.ciszewski.airp@gmail.com</div>
+        <div>tel: +48 790 737 431</div>
     </div>
 
     <!-- MENU -->
-    <header>
-        <div class="logo">Dawid Ciszewski AiRP</div>
-        <nav>
-            <a href="#realizacje">Realizacje</a>
-            <a href="#kontakt">Kontakt</a>
-        </nav>
-    </header>
+	<header>
+    <div class="logo-left">Dawid Ciszewski AiRP</div>
+
+    <div class="logo-center">
+        <img src="img/logo.png" alt="Logo" class="logo-img">
+    </div>
+
+    <nav class="menu-right">
+        <a href="#realizacje">Realizacje</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+	</header>
 
 <!-- SLIDER -->
 <div class="slider">
@@ -254,33 +301,117 @@ document.querySelector('.next').addEventListener('click', () => {
     <div class="realizacje-grid">
         <a href="realizacja1.html" class="realizacja-box">
             <div class="realizacja-img" style="background-image: url('img/real1.jpg');"></div>
-            <h3>Szycie z użyciem robota FANUC SCARA</h3>
+            <h3>Testy wizyjne, linetracking, pick and place, spawalnicze</h3>
         </a>
 
         <a href="realizacja2.html" class="realizacja-box">
             <div class="realizacja-img" style="background-image: url('img/real2.jpg');"></div>
-            <h3>Automatyzacja wtryskarki</h3>
+            <h3>Aplikacja pick and place 10.2021r.</h3>
         </a>
 
         <a href="realizacja3.html" class="realizacja-box">
             <div class="realizacja-img" style="background-image: url('img/real3.jpg');"></div>
-            <h3>Linia do zszywania mebli</h3>
+            <h3>Symulacje Roboguide</h3>
         </a>
 
         <a href="realizacja4.html" class="realizacja-box">
             <div class="realizacja-img" style="background-image: url('img/real4.jpg');"></div>
-            <h3>Linia do spawania grzejników</h3>
+            <h3>Przeróbki programistyczne na robotach oraz PLC</h3>
         </a>
 
         <a href="realizacja5.html" class="realizacja-box">
             <div class="realizacja-img" style="background-image: url('img/real5.jpg');"></div>
-            <h3>Robotyzacja 2 obrabiarek</h3>
+            <h3>Robotyzacja procesu składania drutówki 04.2022r.</h3>
         </a>
 
         <a href="realizacja6.html" class="realizacja-box">
             <div class="realizacja-img" style="background-image: url('img/real6.jpg');"></div>
-            <h3>Składanie drzwi robotem FANUC</h3>
+            <h3>Aplikacja robota FANUC z laserem CAJO</h3>
         </a>
+		<a href="realizacja7.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real7.jpg');"></div>
+            <h3>Robotyzacja wtryskarki poziomej ARBURG 01.2023r.</h3>
+        </a>
+
+        <a href="realizacja8.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real8.jpg');"></div>
+            <h3>Wymiana robota FANUC w aplikacji mycia silników 08.2023r.</h3>
+        </a>
+
+        <a href="realizacja9.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real9.jpg');"></div>
+            <h3>Zrobotyzowany proces kucia oraz obsługi prasy 11.2023r.</h3>
+        </a>
+		<a href="realizacja10.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real10.jpg');"></div>
+            <h3>Paletyzacja robotem CRX 12.2023r.</h3>
+        </a>
+
+        <a href="realizacja11.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real11.jpg');"></div>
+            <h3>Robotyzacja wtryskarki poziomej ARBURG 03.2024r.</h3>
+        </a>
+
+        <a href="realizacja12.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real12.jpg');"></div>
+            <h3>Robotyzacja obrabiarki Robodrill 05.2024r.</h3>
+        </a>		
+		<a href="realizacja13.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real13.jpg');"></div>
+            <h3>Linia do spawania grzejników 07.2024r.</h3>
+        </a>
+
+        <a href="realizacja14.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real14.jpg');"></div>
+            <h3>Robotyzacja procesu składania drutówki 01.2025r.</h3>
+        </a>
+
+        <a href="realizacja15.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real15.jpg');"></div>
+            <h3>Robotyzacja spawania ram 02.2025r.</h3>
+        </a>		
+		<a href="realizacja16.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real16.jpg');"></div>
+            <h3>Automat do podawania palet 02.2025r.</h3>
+        </a>
+
+        <a href="realizacja17.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real17.jpg');"></div>
+            <h3>Znakowanie robotem FANUC 03.2025r.</h3>
+        </a>
+
+        <a href="realizacja18.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real18.jpg');"></div>
+            <h3>Szycie z użyciem robota SCARA 07.2025r.</h3>
+        </a>
+		<a href="realizacja19.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real19.jpg');"></div>
+            <h3>Linia do zszywania mebli 11.2025r.</h3>
+        </a>
+
+        <a href="realizacja20.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real20.jpg');"></div>
+            <h3>Zrobotyzowana aplikacja szlifowania 12.2025r.</h3>
+        </a>
+
+        <a href="realizacja21.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real21.jpg');"></div>
+            <h3>Robotyzacja 2 szlifierek CNC STUDER 02.2026r.</h3>
+        </a>	
+		<a href="realizacja22.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real22.jpg');"></div>
+            <h3>Zrobotyzowane składanie drzwi 04.2026r.</h3>
+        </a>
+
+        <a href="realizacja23.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real23.jpg');"></div>
+            <h3>Linia do kartonowania sufitów 05.2026r.</h3>
+        </a>
+
+        <a href="realizacja24.html" class="realizacja-box">
+            <div class="realizacja-img" style="background-image: url('img/real24.jpg');"></div>
+            <h3>coming soon</h3>
+        </a>			
     </div>
 </section>
 
@@ -320,17 +451,72 @@ document.querySelector('.next').addEventListener('click', () => {
     font-size: 20px;
     font-weight: 600;
 }
+.map-container {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.kontakt-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.kontakt-left {
+    flex: 1;
+    font-size: 18px;
+}
+
+.kontakt-map {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* MOBILE – mapa pod kontaktami */
+@media (max-width: 768px) {
+    .kontakt-wrapper {
+        flex-direction: column;
+    }
+}
 </style>
 
 
     <!-- KONTAKT -->
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p><strong>Email:</strong> dawid.ciszewski.airp@gmail.com</p>
-        <p><strong>Telefon:</strong> +48 790 737 431 </p>
-        <p><strong>NIP:</strong> PL8212692484 </p>
-        <p><strong>Adres:</strong> Maciejowice 10, 08-106 Zbuczyn</p>
-    </section>
+	<section id="kontakt">
+    <h2>Kontakt</h2>
+
+    <div class="kontakt-wrapper">
+
+        <!-- LEWA KOLUMNA -->
+        <div class="kontakt-left">
+            <p><strong>Email:</strong> dawid.ciszewski.airp@gmail.com</p>
+            <p><strong>Telefon:</strong> +48 790 737 431 </p>
+            <p><strong>NIP:</strong> PL 8212692484 </p>
+            <p><strong>Adres:</strong> Łopuszańska 51A, 02-232 Warszawa</p>
+        </div>
+
+        <!-- PRAWA KOLUMNA – MAPA -->
+        <div class="kontakt-map">
+		<iframe 
+			width="100%" 
+			height="250" 
+			style="border:0;" 
+			loading="lazy" 
+			allowfullscreen 
+			referrerpolicy="no-referrer-when-downgrade"
+			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d976.889907847178!2d20.940779!3d52.192065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf4c00000000%3A0x0000000000000000!2s52.192065%2C%2020.940779!5e1!3m2!1spl!2spl!4v1716745000000">
+		</iframe>
+
+        </div>
+
+    </div>
+	</section>
+	
 
     <footer>
         © 2026 Dawid Ciszewski – Automatyka i Robotyka Przemysłowa
